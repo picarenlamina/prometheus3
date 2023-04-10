@@ -12,17 +12,15 @@ route:
       repeat_interval: 4h
       matchers:
         - severity="high"
-
-
 receivers:
   - name: 'mail'
     email_configs:
-      - smarthost: 'yourmailhost.com:465'
-        auth_username: 'yourmail@yourmailhost.com'
-        auth_password: "your mail password"
-        from: 'yourmail@yourmailhost.com'
-        to: 'someonesmail@yourmailhost.com'
-        require_tls: false
+      - smarthost: 'smtp.1and1.es:587'
+        auth_username: 'prueba@iesjoseplanes.es'
+        auth_password: "mypassword"
+        from: 'prueba@iesjoseplanes.es'
+        to: 'fernandodomin.ruiz@murciaeduca.es'
+        require_tls: true
 
   - name: 'teams'
     webhook_configs:
