@@ -8,7 +8,7 @@ receivers:
     email_configs:
       - smarthost: 'smtp.ionos.es:587'
         auth_username: 'prueba@iesjoseplanes.es'
-        auth_password: "mypassword"
+        auth_password: "LOS3cerditos"
         from: 'prueba@iesjoseplanes.es'
         to: 'fernandodomin.ruiz@murciaeduca.es'
         require_tls: true
